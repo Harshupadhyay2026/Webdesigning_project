@@ -1,0 +1,328 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f5ed;
+    color: #203239;
+}
+
+img {
+    display: flex;
+    object-fit: cover;
+    height: 90px;
+    border-style: none;
+    background-color: transparent;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.TOP-ROW {
+    display: flex;
+    height: 100px;
+    background: linear-gradient(115deg, #102f35 0%, #18515a 70%, #206b69 100%);
+    color: white;
+    border-bottom: 4px solid #d78355;
+    box-shadow: 0 5px 16px rgba(16, 47, 53, 0.18);
+}
+
+.logo {
+    display: flex;
+    flex: 0.332;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    min-width: 187px;
+    background: linear-gradient(145deg, #ffffff, #f3eee2);
+    border: 1px solid #e6ddca;
+}
+
+.logo img {
+    max-width: 90%;
+    object-fit: contain;
+}
+
+.Wbesite-name {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.22);
+}
+
+.Navigation-Bar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #163f45;
+    padding: 5px 8px;
+    gap: 5px;
+}
+
+.Navigation-Bar a {
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    flex: 1;
+    text-align: center;
+    min-height: 40px;
+    padding: 11px 8px 8px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.Navigation-Bar a:hover,
+.Navigation-Bar a:focus-visible {
+    background-color: #d78355;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.bottom-row {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    background-color: #f8f5ed;
+}
+
+.side-bar {
+    border: 1px solid #e6ddca;
+    display: flex;
+    flex: 0.332;
+    max-width: 200px;
+    background-color: #f0eadc;
+}
+
+.side-bar ul {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 10px;
+    list-style: none;
+}
+
+.Main-CONTENT {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e6ddca;
+    min-height: 0;
+    background-color: #fffdf8;
+    text-align: center;
+}
+
+.Main-CONTENT iframe {
+    background-color: #fffdf8;
+}
+
+.Main-CONTENT h1,
+.Main-CONTENT h2 {
+    color: #164750;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-dashboard {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border: 1px solid #e6ddca;
+    border-top: 4px solid #d78355;
+    border-radius: 16px;
+    box-shadow: 0 16px 38px rgba(22, 63, 69, 0.14);
+}
+
+.input-bar {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #94b9b4;
+    border-radius: 7px;
+    background-color: #f8fbfa;
+    outline: none;
+}
+
+.input-bar:focus {
+    border-color: #16877e;
+    box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.18);
+}
+
+.branch a {
+    display: flex;
+    text-decoration: none;
+    flex: 1;
+    min-height: 40px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    color: #1d5961;
+    font-weight: bold;
+    align-items: center;
+    justify-content: flex-start;
+    vertical-align: middle;
+    border-radius: 7px;
+    padding: 0 8px;
+    transition: background-color 0.2s, color 0.2s, padding 0.2s;
+}
+
+.branch a:hover,
+.branch a:focus-visible {
+    background-color: #f2dfcf;
+    color: #753f2c;
+    padding-left: 14px;
+}
+
+button {
+    width: 110px;
+    margin-left: 10px;
+    padding: 9px 12px;
+    border: none;
+    border-radius: 7px;
+    background-color: #bd6842;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #985034;
+    transform: translateY(-2px);
+}
+
+.Main-CONTENT iframe {
+    width: 100%;
+    height: 100%;
+    background-color: #fffdf8;
+    border: none;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, #ffffff, #fffdf8);
+    padding: 28px;
+    margin: 20px;
+    min-height: 40%;
+    border-radius: 10px;
+    border: 1px solid #e6ddca;
+    border-top: 4px solid #d78355;
+    box-shadow: 0 16px 38px rgba(22, 63, 69, 0.12);
+}
+
+.login-page-body {
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle at top, #fffdf8 0%, #f0eadc 100%);
+    vertical-align: top;
+    align-items: center;
+    color: #1d5961;
+}
+
+.user-input,
+.pass-input {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+.user,
+.pass {
+    flex: 1;
+    width: 200px;
+    border: 1px solid #94b9b4;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.user:focus,
+.pass:focus {
+    outline: 2px solid #bd6842;
+    outline-offset: 1px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0eadc;
+}
+
+button:focus-visible,
+.Navigation-Bar a:focus-visible,
+.branch a:focus-visible {
+    outline: 3px solid #e2a47d;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .TOP-ROW {
+        height: 80px;
+    }
+
+    .logo {
+        min-width: 100px;
+    }
+
+    .Wbesite-name {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .Navigation-Bar {
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    .Navigation-Bar a {
+        min-width: 20%;
+        font-size: 11px;
+    }
+
+    .side-bar {
+        flex: 0 0 120px;
+    }
+
+    .user-input,
+    .pass-input {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
